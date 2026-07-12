@@ -1,0 +1,10 @@
+/* popup.css */
+body { font-family: Tahoma, Arial, sans-serif; font-size: 13px; direction: rtl; color:#073642; }
+.container { width: 320px; padding: 12px; }
+h3 { margin: 0 0 8px 0; color:#00A3E0 }
+.status { margin-bottom:8px; color:#586e75 }
+.controls { display:flex; gap:6px; margin-bottom:8px }
+.controls button { flex:1; padding:6px; background:#00A3E0; color:#fff; border:none; border-radius:4px; cursor:pointer }
+.controls button:active{ transform:translateY(1px) }
+.latest { background:#f7f9fb; padding:8px; border-radius:6px; margin-bottom:8px }
+.footer { font-size:11px; color:#657b83 }

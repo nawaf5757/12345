@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>نجوم التداول</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h3>⭐ نجوم التداول</h3>
+    <div id="status" class="status">حالة: غير متصل</div>
+
+    <div class="controls">
+      <button id="startBtn">بدء المراقبة</button>
+      <button id="readBtn">قراءة مرة واحدة</button>
+      <button id="stopBtn">إيقاف المراقبة</button>
+    </div>
+
+    <div class="latest">
+      <div>آخر حزمة: <span id="latestTs">—</span></div>
+      <div>عدد الأسهم: <span id="latestCount">—</span></div>
+    </div>
+
+    <div class="footer">الإضافة تقرأ فقط — لا تُنفّذ صفقات</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

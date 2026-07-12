@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "نجوم التداول — Najoom Extension",
+  "version": "0.1.0",
+  "description": "يقرأ بيانات منصة الراجحي لعرض وتحليل الأسهم (قراءة فقط).",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs",
+    "notifications"
+  ],
+  "host_permissions": [
+    "*://*.alrajhi.com/*",
+    "*://*/*stock-screener*",
+    "*://*/*screener*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*stock-screener*","*://*/*screener*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "نجوم التداول",
+    "default_popup": "popup.html"
+  }
+}
